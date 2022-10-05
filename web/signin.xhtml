@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+    xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+          
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+     <h:head>
+        <title>Sign In-Andel</title>
+        <h:outputStylesheet library="extras" name="min.css"/>
+        <h:outputScript library="extras" name="AndelJs.js" target="body"/> 
+    </h:head>
+    <h:body class="body">
+       <div class="container">
+            <p class="logo p1">ANDEL</p>
+            <div class="all">
+                <nav>
+                    <ul>
+                        <li><a href="../index.xhtml">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="form.xhtml">Enrol</a></li>
+                        <li><a href="#">courses</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <a href="#"> <img  class="img-shf" src="resources/img/grayContacts_26px.png"/></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div id="st2"  class="fm-stage fm-item1">
+             <h3 class="fm-texts-hd" style="padding-left: 58px">Sign In</h3>
+            <center>
+                <!--gender, nationality, current certification, marital status, state of origin,city,residence,phn no, email, gaurdian, ref-->
+                <h:form id="Signin2">  
+                    <br/><br/> 
+                    
+                    <h:inputText value="" a:placeholder="Username" required="true"  class="fm-item fm-text" id="o"></h:inputText>  <br/><br/>
+                    <h:inputSecret value="" a:placeholder="Password" required="true" class="fm-item fm-text" id="t"/><br/><br/>
+                    
+                    <p>Already have an account? sign in <i><a>here</a></i></p>
+                    <h:commandButton value="Send" onclick="" class="butt" id="chk"></h:commandButton>
+                    <h:commandButton value="cancel" onclick="" class="buttn"></h:commandButton>
+                </h:form>
+                
+                
+            </center>
+         </div>
+    </h:body>
+</html>
+

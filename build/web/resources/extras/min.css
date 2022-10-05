@@ -1,0 +1,301 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-Dec-2018, 18:56:47
+    Author     : EVELYN
+*/
+
+.container{
+    background-color: blue;
+    opacity: 0.78;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.logo{
+    width: 120px;
+    height: 25px;
+    margin: 10px;
+    float: left;  
+}
+
+.p1{
+    font-family: serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-bottom:10px;
+}
+
+.p2{
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.starter{
+    margin: 50px;
+    padding: 16px;
+}
+
+.all{
+    padding:5px;
+    height: 25px;
+}
+
+.all nav{
+    float: right;
+    height: 50px;
+    nav-up: auto;
+}
+
+.all nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 5px;
+    padding-right: 50px;
+}
+
+.all nav ul li{
+    color: white;
+    height: 15px;
+    padding-right: 25px;
+}
+
+.img-shf{
+    padding-right: 16px;
+}
+
+.all nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.all nav ul li a:hover{
+    text-decoration: none;
+    color: gold;
+    margin: 5px;
+}
+
+.body{
+    background-image: url(../resources/img/the.jpg );
+    font-family:cursive; 
+    /*animation: ease-in-out,3,starter,left,forward,running;*/
+}
+h1{
+    font-family:cursive;
+    color: white;
+    font-weight: bold;
+    
+}
+.sh-txt{
+    background-color:transparent;
+    color: white;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.sh-txt2{
+    background-color:blue;
+    opacity: 0.63;
+    width: 50%;
+    color: white;
+    margin: 20px;
+    border-radius: 25px;
+}
+.btn-btn{
+    background-color: blue;
+    border-radius: 15px;
+    border-color: gold;
+    border-width: 3px;
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+}
+
+/*form css*/
+
+.fm-stage{
+    background-color: blue;
+    opacity: 0.78;
+    width: 550px;
+    border-radius: 4px;
+    margin-top: 70px;
+    margin-left: 500px;
+}
+
+.fm-stage2 {
+    background-color: blue;
+    opacity: 0.78;
+    width: 550px;
+    border-radius: 4px;
+    margin-top: 70px;
+}
+
+.fm-texts{
+    font:cursive;
+    color: white;
+}
+.fm-text{
+    font-size: 16px;
+    color: white;
+}
+
+.drp-down{
+    background-color: transparent;
+    color: chocolate;
+    font-weight: bold;
+    border: transparent;
+    border-bottom: solid goldenrod;
+   
+}
+
+.fm-texts1{
+    color: chocolate;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-left:30%;
+    padding-top: 10%;
+}
+
+.fm-texts-hd{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-left:30%;
+    padding-top: 10%;
+}
+
+.fm-texts-hd2{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+    padding-top: 10%;
+}
+
+.fm-item{
+    width: 250px;
+    height: 20px;
+    /*border-radius: 10px;*/
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid goldenrod; 
+    padding: 10px;
+}
+
+.fm-item1{
+    padding-bottom: 20px;
+}
+
+.fm-item:active{
+    width: 250px;
+    height: 20px;
+    /*border-radius: 10px;*/
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid lime; 
+}
+.butt{
+    margin: 50px;
+    width: 150px;
+    height: 35px;
+    background-color:lawngreen;
+    border-radius: 9px;
+    color: white;
+}
+
+.buttn{
+    margin: 50px;
+    width: 150px;
+    height: 35px;
+    background-color:maroon;
+    border-radius: 9px;
+    color: white;
+}
+
+/*table css*/
+.dtabel{
+       background-color:blue;
+       border: 10px;
+  
+}
+
+
+
+table #tab1{
+     border-collapse:  collapse;
+/*     background-color: windowframe;*/
+    /*border-spacing: 5px;*/
+}
+
+table #tab1 th, td{
+    border: 1px solid white;
+   
+    
+}
+
+#tab1 th,td{
+    padding: 15px;
+}
+
+#tab1 th{
+    background-color: blue;
+    opacity: 0.75;
+    color: white;
+}
+
+table #tab2{
+     border-collapse:  collapse;
+    /*border-spacing: 5px;*/
+}
+caption{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#tab2 th,td{
+    border: 1px solid white;
+    background-color: darkgoldenrod;
+}
+
+#tab2 th,td{
+    padding: 15px;
+}
+
+#tab2 th{
+    background-color: blue;
+    opacity: 0.75;
+    color: white;
+}
+
+/*admin*/
+
+.stage{
+    background-color: blue;
+    opacity: 0.75;
+    padding: 20px;
+    width: 50%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size:18px;
+}
+
+a:hover{
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+

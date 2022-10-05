@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+    xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+          
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+     <h:head>
+        <title>Admission-Andel</title>
+        <h:outputStylesheet library="extras" name="min.css"/>
+    </h:head>
+    <h:body class="body">
+       <div class="container">
+            <p class="logo p1">ANDEL</p>
+            <div class="all">
+                <nav>
+                    <ul>
+                        <li><a href="admin.xhtml">Home</a></li>
+                        <li><a href="admission_list.xhtml">Ad-List</a></li>
+                        <li><a href="form.xhtml">Form</a></li>
+                        <li><a href="#">courses</a></li>
+                        <li><a href="applicant_list.xhtml">Applicants</a></li>
+                        <li><a href="login.xhtml"></a>Sign-Out</li>
+                        <a href="#"> <img  class="img-shf" src="resources/img/GreenContacts.png"/></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="sh-txt">
+ <center>
+     <h:dataTable id="dt1" class="dtabel" value="#{ami_list.datalist}" var="rec" cellspacing="3"  width="70%" dir="LTR" cellpadding="5" frame="hsides" rules="all">
+                   <h:column>
+                        <f:facet name="header">Id</f:facet> 
+                       #{rec.id}
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            First Name
+                        </f:facet> 
+                       #{rec.fname}
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            Last Name
+                        </f:facet> 
+                        #{rec.lname}
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Other Names" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.oname}" ></h:outputText>
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Age" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.age}" ></h:outputText>
+                    </h:column>
+                    
+                   <h:column>
+                        <f:facet name="header">
+                            Phone
+                        </f:facet> 
+                        #{rec.phone}
+                    </h:column>
+         
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Email" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.email}" ></h:outputText>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Nationality"/>
+                        </f:facet> 
+                        <h:outputText value="#{rec.nat}"></h:outputText>
+                    </h:column>
+                      
+                  <h:column>
+                        <f:facet name="header">
+                            State
+                        </f:facet> 
+                        #{rec.state}
+                    </h:column>
+                   <h:column>
+                        <f:facet name="header">
+                            City
+                        </f:facet> 
+                        #{rec.city}
+                    </h:column>
+         
+                 <h:column>
+                        <f:facet name="header">
+                            Address
+                        </f:facet> 
+                        #{rec.address}
+                    </h:column>
+         
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Department" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.dept}" ></h:outputText>
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Qualification" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.qual}" ></h:outputText>
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Batch" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.batch}" ></h:outputText>
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Year" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.yoa}" ></h:outputText>
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Program"/>
+                        </f:facet> 
+                        <h:outputText value="#{rec.pro}"></h:outputText>
+                    </h:column>
+                    
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Gender" />
+                        </f:facet> 
+                        <h:outputText style="" value="#{rec.gen}" ></h:outputText>
+                    </h:column>
+
+                   <h:column>
+                        <f:facet name="header">
+                            Marital
+                        </f:facet> 
+                        #{rec.mari}
+                    </h:column>
+         
+                </h:dataTable><br/><br/><br/>
+ 
+            </center>
+        </div>
+    </h:body>
+</html>
+

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Congrats page-Andel</title>
+        <h:outputStylesheet library="extras" name="min.css"/>
+        <h:outputScript library="extras" name="AndelJs.js" target="body"/> 
+    </h:head>
+    <h:body class="body">
+        <div class="container">
+            <p class="logo p1">ANDEL</p>
+            <div class="all">
+                <nav>
+                    <ul>
+                        <li><a href="../index.xhtml">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="form.xhtml">Enrol</a></li>
+                        <li><a href="#">courses</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="login.xhtml">Sign-Out</a></li>
+                        <a href="#"> <img  class="img-shf" src="resources/img/GreenContacts.png"/></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <br/><br/>
+        <center>
+            <div class="stage"> <br/><br/>
+                   <h:outputText class="p1" value="Congrats you have been admitted!!!"></h:outputText> <br/><br/>
+                   <h:outputText class="p2" value="#{student.row}"/> <br/><br/>
+                   <h:outputText class="p2" value="#{student.cou}"/> <br/><br/>
+                   <h:outputText class="p2" value="#{student.pro}"/> <br/><br/>
+                   <h:outputText class="p2" value="#{student.batch}"/> <br/><br/>
+            </div>
+        </center>
+    </h:body>
+</html>
+

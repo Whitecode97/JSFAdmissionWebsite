@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+    xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+          
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Enrol-Andel</title>
+        <h:outputStylesheet library="extras" name="min.css"/>
+    </h:head>
+    <h:body class="body">
+       <div class="container">
+            <p class="logo p1">ANDEL</p>
+            <div class="all">
+                <nav>
+                    <ul>
+                        <li><a href="index.xhtml">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="form.xhtml">Enrol</a></li>
+                        <li><a href="#">courses</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <a href="login.xhtml"><img  class="img-shf" src="resources/img/icons8_Contacts_26px_1.png"/></a>
+                        <!--<a href="#"> <img src="img/icons8_Sign_Out_26px.png"/></a>-->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="fm-stage fm-item1">
+            <h3 class="fm-texts-hd">Admission Form</h3>
+            <center>
+                <!--gender, nationality, current certification, marital status, state of origin,city,residence,phn no, email, gaurdian, ref-->
+                <h:form> 
+                    <br/><br/><h:inputText value="#{formAction.fname}" a:placeholder="First Name" required="true"  class="fm-item fm-text"></h:inputText>  <br/><br/>
+                    <h:inputText value="#{formAction.lname}" a:placeholder="Last Name" required="true"  class="fm-item fm-text"></h:inputText> <br/><br/>
+                    <h:inputText value="#{formAction.odanames}" a:placeholder="Other Names" required="true"  class="fm-item fm-text"></h:inputText><br/><br/>
+                    <h:inputText value="#{formAction.email}" required="true" a:placeholder="E-mail" class="fm-item fm-text"></h:inputText><br/><br/>
+                    <h:inputText value="#{formAction.phn}" required="true" a:placeholder="phone no" class="fm-item fm-text"></h:inputText>  <br/><br/>
+                    <h:inputText value="#{formAction.nat}" a:placeholder="Nationality" required="true"  class="fm-item fm-text"></h:inputText><br/><br/>
+                    <h:inputText value="#{formAction.soo}" a:placeholder="State" required="true"  class="fm-item fm-text"></h:inputText><br/><br/>
+                    <h:inputText value="#{formAction.address}" a:placeholder="Address" required="true"  class="fm-item fm-text"></h:inputText><br/><br/>
+                    <h:inputText value="#{formAction.city}" a:placeholder="city" required="true"  class="fm-item fm-text"></h:inputText><br/><br/>
+                    <h:inputText value="#{formAction.dd}" a:placeholder="city" required="true"  class="fm-item fm-text"></h:inputText><br/><br/>
+                    
+                    <h:outputLabel class="fm-texts">Gender:</h:outputLabel>
+                    <h:selectOneRadio  value="#{formAction.gender}" class="fm-texts" >
+                        <f:selectItem class="fm-texts" itemLabel="Male"   itemValue="Male"/> 
+                        <f:selectItem class="fm-texts" itemLabel="Female" itemValue="Female"/>
+                        <f:selectItem class="fm-texts" itemLabel="Other"  itemValue="Other"/> 
+                    </h:selectOneRadio><br/> 
+                    
+                    <h:outputLabel  class="fm-texts">select Course:</h:outputLabel>
+                    <h:selectOneRadio  value="#{formAction.course}"  required="true" class="fm-texts">
+                        <f:selectItem  itemLabel="C/S" itemValue="C/S" class="fm-texts"/>
+                        <f:selectItem itemLabel="EE" itemValue="EE" class="fm-texts"/>
+                        <f:selectItem itemLabel="M/E" itemValue="M/E" class="fm-texts"/>
+                        <f:selectItem itemLabel="B/I" itemValue="B/I" class="fm-texts"/>
+                        <f:selectItem itemLabel="BAM" itemValue="BAM" class="fm-texts"/>
+                        <f:selectItem itemLabel="ES" itemValue="ES" class="fm-texts"/>
+                        <f:selectItem itemLabel="CE" itemValue="CE" class="fm-texts"/>
+                    </h:selectOneRadio><br/><br/>
+                    
+                    <h:outputLabel class="fm-texts">Batch:</h:outputLabel>
+                    <h:selectOneRadio value="#{formAction.batch}" required="true" class="fm-texts">
+                        <f:selectItem itemLabel="Dec_jan" itemValue="Dec_jan" class="fm-texts"/>
+                        <f:selectItem itemLabel="Aug_sept" itemValue="Aug_sept" class="fm-texts"/>
+                        <f:selectItem itemLabel="Oct_Nov" itemValue="Oct_Nov" class="fm-texts"/>
+                    </h:selectOneRadio><br/>
+                    
+                    <h:outputLabel class="fm-texts">Intended Program:</h:outputLabel>
+                    <h:selectOneRadio value="#{formAction.pro}"  required="true" class="fm-texts">
+                        <f:selectItem itemLabel="Ph.d" itemValue="Ph.d" class="fm-texts"/>
+                        <f:selectItem itemLabel="Masters" itemValue="Masters"  class="fm-texts"/>
+                        <f:selectItem itemLabel="Bachelors" itemValue="Bachelors" class="fm-texts"/>
+                    </h:selectOneRadio><br/><br/>
+                    
+                    <h:outputLabel class="fm-texts">Year:</h:outputLabel>
+                    <h:selectOneRadio value="#{formAction.year}" label="Year"  required="true" class="fm-texts" >
+                        <f:selectItem itemLabel="2019" itemValue="2019" class="fm-texts"/>
+                    </h:selectOneRadio><br/><br/>
+                    
+                    <h:outputLabel class="fm-texts">Marital Status:</h:outputLabel>
+                    <h:selectOneRadio value="#{formAction.marital}" class="fm-texts">
+                        <f:selectItem class="fm-texts" itemLabel="Single" itemValue="Single"/> 
+                        <f:selectItem  class="fm-texts" itemLabel="Married" itemValue="Married"/> 
+                    </h:selectOneRadio><br/>
+                    
+                   
+                   
+                    
+                    
+               <h:outputLabel class="fm-texts">Certification:</h:outputLabel>
+               <h:selectOneRadio value="#{formAction.prev_cert}" class="fm-texts">
+                   <f:selectItem itemLabel="WASSCE" itemValue="WASSCE" class="fm-texts"/> 
+                    <f:selectItem itemLabel="NECO" itemValue="NECO" class="fm-texts"/> 
+                     <f:selectItem itemLabel="OND" itemValue="OND" class="fm-texts"/> 
+                      <f:selectItem itemLabel="HND" itemValue="HND" class="fm-texts"/> 
+                       <f:selectItem itemLabel="Bsc" itemValue="Bsc" class="fm-texts"/> 
+                        <f:selectItem itemLabel="Other" itemValue="Other" class="fm-texts"/> 
+                    </h:selectOneRadio><br/>
+                
+               
+                    <h:commandButton value="Send" action="#{formAction.data()}" class="butt"></h:commandButton>
+                    <h:commandButton value="cancel" onclick="" class="buttn"></h:commandButton>
+
+                </h:form>
+            </center>
+        </div>
+    </h:body>
+</html>
+
